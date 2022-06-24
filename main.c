@@ -7,7 +7,7 @@ int main() {
     Date *d1 = create_date(22,6,2022);
     print_date(d1);
 
-    Person *person =  create_person("Yo","Han", d1);
+    Person *person =  create_person("Yo","HanHanHan", d1);
     print_person(person);
 
     Date *d2 = create_date(22,6,2022);
