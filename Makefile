@@ -5,13 +5,19 @@
 all : prog
 
 
-prog : date.o main.o
-	gcc -o prog date.o main.o
+prog : date.o main.o person.o list.o
+	gcc -o prog date.o main.o person.o list.o
 
-TD22Function.o : date.c
-	gcc -c date.c
+date.o : date.c 
+	gcc -c date.c 
 
-TD22.o : main.c
+person.o : person.c
+	gcc -c person.c
+
+list.o : list.c
+	gcc -c list.c
+
+main.o : main.c
 	gcc -c main.c
 
 clean : 
